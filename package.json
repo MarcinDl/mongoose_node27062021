@@ -1,0 +1,25 @@
+{
+  "name": "mongo_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinDl/mongoose_node27062021.git"
+  },
+  "author": "MarcinDl <marcindl@hotmail.com> (http://www.softlab.mem)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinDl/mongoose_node27062021/issues"
+  },
+  "homepage": "https://github.com/MarcinDl/mongoose_node27062021#readme"
+}
