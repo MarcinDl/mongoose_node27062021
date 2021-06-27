@@ -44,4 +44,23 @@ router.get("/posts", async function (req,res){
     await res.json(findID)
 })
 
+router.post("/", async function(req,res){
+    const insertDoc = new Character({name: req.body.name, rank: req.body.rank, age: req.body.age})
+    await insertDoc.save();
+    res.redirect("/")
+})
+
+router.post("/update", async function(req,res){
+    const findID = await Character.find();
+    await Character.findByIdAndUpdate({_id:findID[1]._id},{name: "Dawid", age: 25});
+    res.redirect("/")
+})
+
+
+router.post("/deleteChoosen",async function(req,res){
+    console.log(req.body.ktoryUsunac)
+    const findID = await Character.find();
+    await Character.deleteOne({_id: findID[req.body.ktoryUsunac]._id})
+    res.redirect("/")
+})
 module.exports = router;
